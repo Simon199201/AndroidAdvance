@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidAdvanced</string>
+    <string name="activity_start_mode">Activity的生命周期和启动模式</string>
+    <string name="ipc">IPC机制</string>
+</resources>
