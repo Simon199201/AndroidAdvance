@@ -8,15 +8,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <Button
+            android:id="@+id/btn_activity_life_cycle_and_start_mode"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/activity_start_mode"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:text="@string/activity_start_mode" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ipc"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+        <Button
+            android:id="@+id/btn_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/study_note"
             style="@style/Widget.AppCompat.Button.Colored"/>
     </LinearLayout>
 

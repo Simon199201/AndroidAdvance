@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lifecycle.LifeCycleActivity" />
+        <activity android:name=".lifecycle.TransparentActivity" android:theme="@style/TransparentTheme" />
+        <activity android:name=".lifecycle.ConfigChangedActivity" />
     </application>
 
 </manifest>
