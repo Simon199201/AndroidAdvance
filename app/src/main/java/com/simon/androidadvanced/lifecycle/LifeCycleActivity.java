@@ -29,4 +29,7 @@ public class LifeCycleActivity extends BaseActivity {
     @OnClick(R.id.btn_config_change) void startConfigChangedActivity(){
         Util.startActivity(this,ConfigChangedActivity.class);
     }
+    @OnClick(R.id.btn_config_change_not_reboot) void startConfigChangedNotRebootActivity(){
+        Util.startActivity(this,ConfigChangedNotRebootActivity.class);
+    }
 }

@@ -4,7 +4,9 @@
     <string name="ipc">IPC机制</string>
     <string name="study_note">读书笔记</string>
     <string name="start_non_full_activity">开启一个非全屏的Activity</string>
-    <string name="start_config_changed">系统配置发生改变</string>
+    <string name="start_config_changed">系统配置发生改变,activity重启</string>
+    <string name="start_config_changed_not_reboot">系统配置发生改变,activity不重启</string>
     <string name="i_am_transparent">我是透明主题的界面</string>
     <string name="config_change"><![CDATA[让手机横竖屏，观察onSaveInstanceState和onRestoreInstanceState的调用顺序： onPause->onStop->onSaveInstanceState->onDestroy->onCreate->onStart->onRestoreInstanceState->onResume]]></string>
+    <string name="config_change_not_reboot"><![CDATA[让手机横竖屏，观察onConfigurationChanged的调用顺序]]></string>
 </resources>

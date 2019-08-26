@@ -14,4 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/start_config_changed" />
+    <Button
+        android:id="@+id/btn_config_change_not_reboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_config_changed_not_reboot" />
 </LinearLayout>
