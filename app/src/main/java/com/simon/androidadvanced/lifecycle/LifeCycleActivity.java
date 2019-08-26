@@ -35,4 +35,7 @@ public class LifeCycleActivity extends BaseActivity {
     @OnClick(R.id.btn_launch_mode) void startLaunchModeActivity(){
         Util.startActivity(this,LaunchModeActivity.class);
     }
+    @OnClick(R.id.btn_intent_filter) void startIntentFilterActivity(){
+        Util.startActivity(this,IntentFilterActivity.class);
+    }
 }

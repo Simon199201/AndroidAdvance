@@ -12,4 +12,6 @@
     <string name="config_change_not_reboot"><![CDATA[让手机横竖屏，观察onConfigurationChanged的调用顺序]]></string>
     <string name="launch_mode">启动模式</string>
     <string name="launch_mode_detail">启动模式分为四种：standard，singleTop，singleTask，singleInstance</string>
+    <string name="intent_filter">IntentFilter的匹配规则</string>
+    <string name="intent_filter_detail">action必须匹配；\n category可以多对多，但是规则要多于匹配category的个数；\n data类似于action，但是data的结构更复杂，包含URI和MimeType</string>
 </resources>

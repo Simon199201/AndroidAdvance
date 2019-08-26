@@ -5,28 +5,32 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_start_non_full_activity"
+        android:id="@+id/btn_start_by_intent_filter_action"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start_non_full_activity" />
+        android:layout_below="@id/tv_text"
+        android:text="单一action启动"/>
     <Button
-        android:id="@+id/btn_config_change"
+        android:id="@+id/btn_start_by_intent_filter_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start_config_changed" />
+        android:layout_below="@id/tv_text"
+        android:text="多个category启动"/>
     <Button
-        android:id="@+id/btn_config_change_not_reboot"
+        android:id="@+id/btn_start_by_intent_filter_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start_config_changed_not_reboot" />
+        android:layout_below="@id/tv_text"
+        android:text="单一data启动"/>
     <Button
-        android:id="@+id/btn_launch_mode"
+        android:id="@+id/btn_start_by_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/launch_mode" />
-    <Button
-        android:id="@+id/btn_intent_filter"
+        android:layout_below="@id/tv_text"
+        android:text="action、data、category一起启动"/>
+    <TextView
+        android:id="@+id/tv_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intent_filter" />
+        android:text="@string/intent_filter_detail" />
 </LinearLayout>

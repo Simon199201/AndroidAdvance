@@ -27,6 +27,27 @@
         <activity android:name=".lifecycle.LaunchModeActivity"
             android:launchMode="singleTask"
             android:taskAffinity="com.simon.androidadvanced1"/>
+        <activity android:name=".lifecycle.IntentFilterActivity" >
+            <intent-filter>
+                <action android:name="com.action.only"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="com.category.only"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:mimeType="text/html"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.action.both_3"/>
+                <category android:name="com.category.both_3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
