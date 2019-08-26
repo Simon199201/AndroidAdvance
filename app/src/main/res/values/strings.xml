@@ -7,6 +7,9 @@
     <string name="start_config_changed">系统配置发生改变,activity重启</string>
     <string name="start_config_changed_not_reboot">系统配置发生改变,activity不重启</string>
     <string name="i_am_transparent">我是透明主题的界面</string>
+    <string name="i_am_launch_mode">我是不同的启动模式</string>
     <string name="config_change"><![CDATA[让手机横竖屏，观察onSaveInstanceState和onRestoreInstanceState的调用顺序： onPause->onStop->onSaveInstanceState->onDestroy->onCreate->onStart->onRestoreInstanceState->onResume]]></string>
     <string name="config_change_not_reboot"><![CDATA[让手机横竖屏，观察onConfigurationChanged的调用顺序]]></string>
+    <string name="launch_mode">启动模式</string>
+    <string name="launch_mode_detail">启动模式分为四种：standard，singleTop，singleTask，singleInstance</string>
 </resources>

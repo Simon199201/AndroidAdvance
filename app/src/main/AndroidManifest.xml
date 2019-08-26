@@ -17,9 +17,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".lifecycle.LifeCycleActivity" />
-        <activity android:name=".lifecycle.TransparentActivity" android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".lifecycle.TransparentActivity"
+            android:theme="@style/TransparentTheme" />
         <activity android:name=".lifecycle.ConfigChangedActivity" />
-        <activity android:name=".lifecycle.ConfigChangedNotRebootActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".lifecycle.ConfigChangedNotRebootActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".lifecycle.LaunchModeActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.simon.androidadvanced1"/>
     </application>
 
 </manifest>
