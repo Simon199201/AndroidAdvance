@@ -1,15 +1,20 @@
 package com.simon.androidadvanced.lifecycle;
 
 import android.content.Intent;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.simon.androidadvanced.R;
 import com.simon.androidadvanced.common.BaseActivity;
 
-import androidx.annotation.Nullable;
+import java.util.List;
+
 import butterknife.OnClick;
+
+import static android.content.pm.PackageManager.MATCH_DEFAULT_ONLY;
 
 /**
  * @author simon
@@ -53,5 +58,17 @@ public class IntentFilterActivity extends BaseActivity {
         intent.addCategory("android.intent.category.DEFAULT");
         intent.setType("text/plain");
         startActivity(intent);
+    }
+    @OnClick(R.id.btn_start_by_pre) void startIntentPre(){
+        Intent intent = new Intent("com.action.both_3");
+        intent.addCategory("com.category.both_4");
+        intent.addCategory("android.intent.category.DEFAULT");
+        intent.setType("text/plain");
+        List<ResolveInfo> list = getPackageManager().queryIntentActivities(intent, MATCH_DEFAULT_ONLY);
+        if (list.size() != 0) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, getResources().getString(R.string.no_activity), Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <!--入口activity的action和category-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lifecycle.LifeCycleActivity" />
+        <activity android:name=".lifecycle.LifeCycleAndLaunchModeActivity" />
         <activity
             android:name=".lifecycle.TransparentActivity"
             android:theme="@style/TransparentTheme" />

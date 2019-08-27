@@ -11,8 +11,9 @@ import butterknife.OnClick;
 
 /**
  * @author simon
+ * 生命周期、启动模式、IntentFilter匹配规则
  */
-public class LifeCycleActivity extends BaseActivity {
+public class LifeCycleAndLaunchModeActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

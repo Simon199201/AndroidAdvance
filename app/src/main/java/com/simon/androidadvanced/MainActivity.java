@@ -1,17 +1,12 @@
 package com.simon.androidadvanced;
 
-import androidx.appcompat.app.AppCompatActivity;
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
-import android.widget.Button;
 
 import com.simon.androidadvanced.common.BaseActivity;
-import com.simon.androidadvanced.lifecycle.LifeCycleActivity;
+import com.simon.androidadvanced.lifecycle.LifeCycleAndLaunchModeActivity;
 import com.simon.androidadvanced.utils.Util;
 
 /**
@@ -26,7 +21,7 @@ public class MainActivity extends BaseActivity {
      * 生命周期和启动模式
      */
     @OnClick(R.id.btn_activity_life_cycle_and_start_mode) void startActivity(){
-        Util.startActivity(this,LifeCycleActivity.class);
+        Util.startActivity(this, LifeCycleAndLaunchModeActivity.class);
     }
 
     @OnClick(R.id.btn_note) void startStudyNoteLink() {

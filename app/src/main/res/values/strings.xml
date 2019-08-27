@@ -14,4 +14,10 @@
     <string name="launch_mode_detail">启动模式分为四种：standard，singleTop，singleTask，singleInstance</string>
     <string name="intent_filter">IntentFilter的匹配规则</string>
     <string name="intent_filter_detail">action必须匹配；\n category可以多对多，但是规则要多于匹配category的个数；\n data类似于action，但是data的结构更复杂，包含URI和MimeType</string>
+    <string name="no_activity">没有找到对应的Activity</string>
+    <string name="launch_mode_single_action">单一action启动</string>
+    <string name="launch_mode_more_category">多个category启动</string>
+    <string name="launch_mode_single_data">单一data启动</string>
+    <string name="launch_mode_toghter">action、data、category一起启动</string>
+    <string name="launch_mode_pick_result_mothod">匹配结果判断，不然会报错</string>
 </resources>

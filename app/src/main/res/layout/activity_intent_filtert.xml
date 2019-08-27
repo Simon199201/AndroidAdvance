@@ -9,25 +9,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_text"
-        android:text="单一action启动"/>
+        android:text="@string/launch_mode_single_action"/>
     <Button
         android:id="@+id/btn_start_by_intent_filter_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_text"
-        android:text="多个category启动"/>
+        android:text="@string/launch_mode_more_category"/>
     <Button
         android:id="@+id/btn_start_by_intent_filter_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_text"
-        android:text="单一data启动"/>
+        android:text="@string/launch_mode_single_data"/>
     <Button
         android:id="@+id/btn_start_by_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_text"
-        android:text="action、data、category一起启动"/>
+        android:text="@string/launch_mode_toghter"/>
+    <Button
+        android:id="@+id/btn_start_by_pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:text="@string/launch_mode_pick_result_mothod"/>
     <TextView
         android:id="@+id/tv_text"
         android:layout_width="match_parent"
